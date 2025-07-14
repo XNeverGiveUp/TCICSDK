@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                       腾讯云互动教育极简单接入SaaS方案
                    DESC
-  s.homepage     = "https://github.com/Yunxiao-Stewiechen/TCICSDK"
+  s.homepage     = "https://github.com/Yunxiao-Jorahwang/TCICSDK"
   s.license      = "MIT"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = "eagleychen"
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 #  }
 
 
-  s.source       = { :git => "https://github.com/Yunxiao-Stewiechen/TCICSDK.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/Yunxiao-Jorahwang/TCICSDK.git", :tag => "v#{s.version}" }
 
   s.resource = 'tcicimage.bundle'
   s.vendored_frameworks = '*.framework'
