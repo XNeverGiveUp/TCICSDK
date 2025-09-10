@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'Foundation', 'Accelerate'
   s.dependency 'Masonry'
   s.dependency 'YYModel'
-  s.dependency 'Bugly'
+
   s.dependency 'TXLiteAVSDK_Professional'
 
   s.pod_target_xcconfig = {
