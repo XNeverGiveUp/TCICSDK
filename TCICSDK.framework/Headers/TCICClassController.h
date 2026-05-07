@@ -48,6 +48,19 @@ extern NSString *_Nonnull const TCIC_SDK_CommitID;
 + (void)preloadClass;
 
 /**
+ * 进课堂前预加载指定环境，以便快速进房;
+ * @param env : 环境参数; 传 nil 或空走线上正式环境
+ * 等价于 [self preloadClass:env config:nil];
+ */
++ (void)preloadClass:(NSString * _Nullable)env;
+
+/**
+* 进课堂前按实例配置预加载环境，以便 region / 主域名 与实际课堂保持一致;
+* @param env : 环境参数，规则同 preloadClass:
+* @param roomConfig : 课堂配置，可为空；为空时退化为默认 cn 行为
+*/
++ (void)preloadClass:(NSString * _Nullable)env config:(TCICClassConfig * _Nullable)roomConfig;
+/**
 * 使用H5+Native方式使用，请在主线程中调用
 * @param roomConfig : 打开课堂所需要的配置
 * 如果参数不合法，会返回nil，外部注意处理
